@@ -15,17 +15,17 @@ function Shortlink() {
           return<div className="card ml-5" key={i}>
         <div className="card-body">
          
-          <h6 className="card-title text-center">&nbsp;<img src={Fullurl} width="20px" alt="url-favicon"></img>&nbsp;{`https://url-u7rz.onrender.com/${e.Shorturl}`}</h6>
+          <h6 className="card-title text-center">&nbsp;<i className="fa-solid fa-link"></i><img src={Fullurl} width="20px" alt="url-favicon"></img>&nbsp;{`https://url-u7rz.onrender.com/${e.Shorturl}`}</h6>
 
          <div className='comarea'>
          <a href={url}
               target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} > <button className='mt-3 v' title="Visit link">
         <img src="image.png" alt='...'></img></button></a>
 
-         <button className="mt-3 cp"title='Copy to clipboard' onClick={notify}> <CopyToClipboard
+         <button className="mt-3 cp" title='Copy to clipboard' onClick={notify}> <CopyToClipboard
                 text={`https://url-u7rz.onrender.com/${e.Shorturl}`}
                 onCopy={() => setcopy(true)}>
-                <i class="fa-solid fa-copy"></i>
+                <i className="fa-solid fa-copy"></i>
    
               </CopyToClipboard>
               
