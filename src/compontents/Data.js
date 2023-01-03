@@ -43,7 +43,7 @@ function Data() {
         </div>
        
         <div  className="clip-icon" style={{ display: 'flex', justifyContent: 'center' }}>
-        <img src="scissors (1).png"width="40px" alt="...'></img>
+        <img src="scissors.png"width="40px" alt="...'></img>
         </div>
         <div className="vl" style={{ display: 'flex', justifyContent: 'center' }}></div>
         <Outlet/>
