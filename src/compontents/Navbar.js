@@ -23,21 +23,23 @@ function Navbar() {
             <a className="nav-link dropdown-toggle" href="javascript void" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               My links
             </a>
-              {data.map((e,i)=>{
+            <ul className="dropdown-menu">
+              {data.map((e)=>{
                   const url=`https://url-u7rz.onrender.com/${e.Shorturl}`
                   const Fullurl=`https://${e.Fullurl.slice(8)}/favicon.ico`
               return<>
-              <ul className="dropdown-menu"key={i}>
+             
              <li>
                 <hr className="dropdown-divider"/>
               </li>
               <li ><img src={Fullurl} width="20px" alt="url-favicon"></img>&nbsp;<a href={url} style={{fontSize:"14px"}}target='_blank' rel="noreferrer">{url}</a>
               </li>
-              </ul>
+             
               </>
             })
           }
-          
+           </ul>
+
           </li>
         </ul>
       </div>
