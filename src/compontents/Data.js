@@ -14,7 +14,6 @@ function Data() {
             url:Fullurl
         })
          if(res.status===200){
-            // alert(res.data)
          }
          else if(res.status===500){
             alert(res.data)
@@ -29,7 +28,7 @@ function Data() {
     return <>
     <Navbar></Navbar>
     
-    <div className='Container-fluid input' style={{ display: 'flex', justifyContent: 'center' }}>
+    <div className='Container-fluid input' style={{ "display": 'flex', "justifyContent": 'center' }}>
             <div className='row'>
                     <input type="text" placeholder="Enter a link" value={Fullurl} onChange={(e) => setFullurl(e.target.value)} />
                     <div className='col mt-4 text-center'>
@@ -42,10 +41,12 @@ function Data() {
             
         </div>
        
-        <div  className="clip-icon" style={{ display: 'flex', justifyContent: 'center' }}>
-        <img src="scissors.png"width="40px" alt="...'></img>
+        <div  className="clip-icon" style={{ "display": 'flex', "justifyContent": 'center' }}>
+        <img src="scissors.png"width="40px" alt="..."></img>
         </div>
-        <div className="vl" style={{ display: 'flex', justifyContent: 'center' }}></div>
+        <div className="vl" style={{ "display": 'flex', "justifyContent": 'center' }}>
+
+        </div>
         <Outlet/>
        
     </>
