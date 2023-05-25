@@ -10,7 +10,7 @@ function Shortlink() {
 
   return <div className='container-fluid' style={{ display: 'flex', justifyContent: 'center' }}>
       {data.map((e, i) => {
-          const url=`https://url-u7rz.onrender.com/${e.Shorturl}`
+          const url=`https://url-shortener-u2jl.onrender.com/${e.Shorturl}`
           const Fullurl=`https://${e.Fullurl.slice(8)}/favicon.ico`
           return<div className="card ml-5" key={i}>
         <div className="card-body">
@@ -23,7 +23,7 @@ function Shortlink() {
         <img src="external-link.png" alt='...'></img></button></a>
 
          <button className="mt-3 cp" title='Copy to clipboard' onClick={notify}> <CopyToClipboard
-                text={`https://url-u7rz.onrender.com/${e.Shorturl}`}
+                text={`https://url-shortener-u2jl.onrender.com/${e.Shorturl}`}
                 onCopy={() => setcopy(true)}>
                 <i className="fa-solid fa-copy"></i>
    
