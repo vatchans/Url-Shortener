@@ -8,7 +8,7 @@ function Context({children}) {
     let getData = async () => {
       try {
   
-        let res = await axios.get(`https://url-u7rz.onrender.com/`)
+        let res = await axios.get(`https://url-shortener-u2jl.onrender.com/`)
         if (res.status === 200)
           setData(res.data)
       } catch (error) {
