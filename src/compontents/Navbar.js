@@ -25,7 +25,7 @@ function Navbar() {
             </a>
             <ul className="dropdown-menu">
               {data.map((e)=>{
-                  const url=`https://url-u7rz.onrender.com/${e.Shorturl}`
+                  const url=`https://url-shortener-u2jl.onrender.com/${e.Shorturl}`
                   const Fullurl=`https://${e.Fullurl.slice(8)}/favicon.ico`
               return<>
              
