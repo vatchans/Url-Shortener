@@ -15,7 +15,7 @@ function Data() {
     },[])
     let handlesubmit = async() => {
         try{
-    let res=await axios.post("https://url-u7rz.onrender.com/Shorturl",
+    let res=await axios.post("https://url-shortener-u2jl.onrender.com/Shorturl",
         {
             // Fullurl
             url:Fullurl
